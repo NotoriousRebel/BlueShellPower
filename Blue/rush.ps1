@@ -87,7 +87,7 @@ function change_users{
 		 }
 	}
 	#Disable-LocalUser -Name $username
-	$Password = (ConvertTo-SecureString -AsPlainText "TenToesDownForLife$10!" -Force)
+	$Password = (ConvertTo-SecureString -AsPlainText "Password1234" -Force)
 	ForEach($user in $ListUsers){
 		Try{
 			Write-Verbose -Message "Changing password for User: $user" -Verbose
